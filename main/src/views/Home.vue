@@ -1,9 +1,13 @@
 <template>
-  <div class="home">
+  <div class='home'>
     <h1>{{ msg }}</h1>
+    <img src='../assets/supreme_bear.png' alt='Supreme Bear' width='100'>
     <p>
       Welcome to Spicy Water. An online way to interact and play with
       friends online!
+    </p>
+    <p>
+      Select what deck you want to play with!
     </p>
   </div>
 </template>
@@ -11,8 +15,10 @@
 <script>
 export default {
   name: 'Home',
-  props: {
-    msg: String,
+  data() {
+    return {
+      msg: 'Spicy Water',
+    };
   },
 };
 </script>
