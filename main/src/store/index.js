@@ -258,8 +258,8 @@ export default new Vuex.Store({
       },
       {
         id: 5,
-        code: 'gamming',
-        name: 'Gamming',
+        code: 'gaming',
+        name: 'Gaming',
       },
       {
         id: 6,
