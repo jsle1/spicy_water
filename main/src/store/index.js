@@ -266,6 +266,11 @@ export default new Vuex.Store({
         code: 'nsfw',
         name: 'NSFW',
       },
+      {
+        id: 7,
+        code: 'college',
+        name: 'College',
+      },
     ],
     selected_deck: '',
   },
