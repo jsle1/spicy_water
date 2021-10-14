@@ -1,0 +1,278 @@
+import Vue from 'vue';
+import Vuex from 'vuex';
+
+Vue.use(Vuex);
+
+export default new Vuex.Store({
+  state: {
+    asian: [
+      {
+        id: 1,
+        type: 'argue',
+        prompt: 'KBBQ or AYCE Sushi',
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 2,
+        type: 'argue',
+        prompt: 'Is KPop overrated?',
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 3,
+        type: 'categories',
+        prompt: 'Asian snacks',
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 4,
+        type: 'categories',
+        prompt: "Things you've been spanked with",
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 5,
+        type: 'dare',
+        prompt: "Do an Asian squat until it's your turn again",
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 6,
+        type: 'dare',
+        prompt: "Speak in your native language until it's your turn again",
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 7,
+        type: 'finish_lyric',
+        prompt: "Oh wait til' I do what I do",
+        sips: 0,
+        answer: 'Hit you with that ddu-du ddu-du du',
+      },
+      {
+        id: 8,
+        type: 'finish_lyric',
+        prompt: 'I got the feels for you, yeah, yeah, yeah, yeah',
+        sips: 0,
+        answer: 'You have stolen my heart, oh, yeah',
+      },
+      {
+        id: 9,
+        type: 'general',
+        prompt: "Drink if you're engineering or pre-med",
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 10,
+        type: 'general',
+        prompt: "Take a sip for every rave you've been to",
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 11,
+        type: 'most_likely',
+        prompt: 'Most likely to make their parents proud',
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 12,
+        type: 'most_likely',
+        prompt: 'Most likely to disappoint their parents',
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 13,
+        type: 'trivia',
+        prompt: 'Name 6 zodiac animals.',
+        sips: 0,
+        answer: 'rat, ox, tiger, rabbit, dragon, snake, horse, ram, monkey, '
+                / 'rooster, dog, pig',
+      },
+      {
+        id: 14,
+        type: 'trivia',
+        prompt: 'What year did the Korean War end?',
+        sips: 0,
+        answer: 'July 27, 1953',
+      },
+      {
+        id: 15,
+        type: 'truth',
+        prompt: 'Who was your first church crush?',
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 16,
+        type: 'truth',
+        prompt: 'How much do you spend on boba per month?',
+        sips: 0,
+        answer: '',
+      },
+    ],
+    general_deck: [
+      {
+        id: 1,
+        type: 'argue',
+        prompt: 'Best Disney Movie',
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 2,
+        type: 'argue',
+        prompt: 'Is a hotdog a sandwich',
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 3,
+        type: 'categories',
+        prompt: 'Shoe brands',
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 4,
+        type: 'categories',
+        prompt: 'Water brands',
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 5,
+        type: 'dare',
+        prompt: 'Post on social media that you litter and keep it up for an hour',
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 6,
+        type: 'dare',
+        prompt: 'Take an article of clothing off for the rest of the game',
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 7,
+        type: 'finish_lyric',
+        prompt: "In the night I hear 'em talk the coldest story ever told",
+        sips: 0,
+        answer: 'Somewhere far along this road. He lost his soul to a woman so heartless',
+      },
+      {
+        id: 8,
+        type: 'finish_lyric',
+        prompt: "And I said, ooh, I'm blinded by the lights",
+        sips: 0,
+        answer: "No, I can't sleep until I feel your touch",
+      },
+      {
+        id: 9,
+        type: 'general',
+        prompt: 'Make a rule until your next turn. Drink if broken, even yourself',
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 10,
+        type: 'general',
+        prompt: "Drink if you're a STEM major",
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 11,
+        type: 'most_likely',
+        prompt: 'Most likely to black out',
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 12,
+        type: 'most_likely',
+        prompt: 'Have the lowest ACT score',
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 13,
+        type: 'trivia',
+        prompt: 'What is the approximate distance between the Earth and the Sun?',
+        sips: 0,
+        answer: '149,600,000 kilometers',
+      },
+      {
+        id: 14,
+        type: 'trivia',
+        prompt: 'What does cryptozoology study?',
+        sips: 0,
+        answer: 'the study of animals that are rumored to exist',
+      },
+      {
+        id: 15,
+        type: 'truth',
+        prompt: 'Do you still think about your ex?',
+        sips: 0,
+        answer: '',
+      },
+      {
+        id: 16,
+        type: 'truth',
+        prompt: 'Who is the least attractive person here?',
+        sips: 0,
+        answer: '',
+      },
+    ],
+
+    decks_names: [
+      {
+        id: 1,
+        code: 'general_deck',
+        name: 'General Deck',
+      },
+      {
+        id: 2,
+        code: 'asian',
+        name: 'Asian',
+      },
+      {
+        id: 3,
+        code: 'anime',
+        name: 'Anime',
+      },
+      {
+        id: 4,
+        code: 'kpop',
+        name: 'Kpop',
+      },
+      {
+        id: 5,
+        code: 'gaming',
+        name: 'Gaming',
+      },
+      {
+        id: 6,
+        code: 'nsfw',
+        name: 'NSFW',
+      },
+    ],
+    selected_deck: '',
+  },
+  mutations: {
+  },
+  actions: {
+  },
+  modules: {
+  },
+});
