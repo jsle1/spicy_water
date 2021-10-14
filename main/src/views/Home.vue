@@ -9,16 +9,22 @@
     <p>
       Select what deck you want to play with!
     </p>
+    <deck-selection></deck-selection>
   </div>
 </template>
 
 <script>
+import DeckSelection from '../components/decks/DeckSelection.vue';
+
 export default {
   name: 'Home',
   data() {
     return {
       msg: 'Spicy Water',
     };
+  },
+  components: {
+    'deck-selection': DeckSelection,
   },
 };
 </script>

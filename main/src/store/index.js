@@ -267,6 +267,7 @@ export default new Vuex.Store({
         name: 'NSFW',
       },
     ],
+    selected_deck: '',
   },
   mutations: {
   },
