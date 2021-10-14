@@ -271,6 +271,11 @@ export default new Vuex.Store({
         code: 'college',
         name: 'College',
       },
+      {
+        id: 8,
+        code: 'sports',
+        name: 'Sports',
+      },
     ],
     selected_deck: '',
   },
